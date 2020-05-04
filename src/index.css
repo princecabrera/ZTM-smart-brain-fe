@@ -1,10 +1,39 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
 body {
+  color: #fff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: rgba(0,0,0,1);
+background: linear-gradient(to bottom, rgba(95,116,135,1) 0%, rgba(0,0,0,1) 100%);
+
+/* 
+background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+
+   */
+
+}
+.particles{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+button{
+  cursor: pointer;
 }
 
 code {
